@@ -28,7 +28,7 @@ if [ "$force" != 1 ]; then
 		echo "IP $ipaddr unchanged"
 		exit 0
 	fi
-	echo "forcing update anway"
+	echo "forcing update"
 fi
 
 zid=$(curl -sS "https://api.cloudflare.com/client/v4/zones?name=$zone" \
