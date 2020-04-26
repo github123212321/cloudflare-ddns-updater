@@ -25,7 +25,7 @@ ipaddr=$(curl -sS http://ipv4.icanhazip.com)
 if [ "$force" != 1 ]; then
 	cfarec=$(dig $record +short)
 	if [ $ipaddr == $cfarec ]; then 
-		echo "IP $ipadr unchanged"
+		echo "IP $ipaddr unchanged"
 		exit 0
 	fi
 	echo "forcing update anway"
