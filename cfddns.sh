@@ -20,7 +20,7 @@ for opt in "$@"; do
 done 
 
 
-ipaddr=$(curl -sS http://ipv4.icanhazip.com)
+ipaddr=$(dig @resolver1.opendns.com ANY myip.opendns.com +short)
 
 if [ "$force" != 1 ]; then
 	cfarec=$(dig $record +short)
