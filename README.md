@@ -1,4 +1,4 @@
-# cloudflare-dns-updater
+# cloudflare-ddns-updater
 Quick bash script to update cloudflare's dynamic dns
 
 will update IP if change is detected (run it periodically in crontab). --force and --log available. 
