@@ -25,7 +25,7 @@ cfarec=$(dig $record +short)
 if [ "$force" != 1 ]; then
 	if [ $ipaddr == $cfarec ]; then 
 		echo "IP $ipaddr unchanged"
-		updateid=0
+		updateip=0
 	else
 		updateip=1
 	fi
